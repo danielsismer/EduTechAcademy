@@ -1,0 +1,21 @@
+:root{
+
+    /* COLORS LIGHT MODE*/
+    --background-body-l: #f9f9f9;
+    --defaultText-l: #1E1E1E;
+    --mainColor-l: #0077cc;
+    --background-card-l: #ffffff;
+    --hover-l: #005fa3;
+    --dividerEdges-l: #e0e0e0;
+
+    /* COLORS DARK MODE*/
+    --background-body-d: #1e1e1e;
+    --defaultText-d: #f9f9f9;
+    --mainColor-d: #4da6ff;
+    --background-card-d: #2c2c2c;
+    --hover-d: #66bfff;
+    --dividerEdges-d: #444444;
+
+}
+
+@import "tailwindcss";
