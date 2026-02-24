@@ -1,159 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTech Academy</title>
-    <link rel="stylesheet" href="./src/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50 font-sans text-gray-900">
 
-<body>
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo flex items-center gap-2">
+                <img src="./img/logo.svg" alt="Logo EduTech" class="w-8">
+                <span class="text-blue-600 font-bold text-xl">EduTech Academy</span>
+            </div>
+            
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="#" class="hover:text-blue-600 transition">Home</a>
+                <a href="#" class="hover:text-blue-600 transition">Cursos</a>
+                <a href="#" class="hover:text-blue-600 transition">Matrícula</a>
+                <a href="#" class="hover:text-blue-600 transition">Sobre</a>
+            </nav>
 
-    <body>
+            <div class="md:hidden text-2xl cursor-pointer">&#9776;</div>
+        </div>
+    </header>
 
-        <header>
-            <div class="flex justify-between mt-4 px-2">
-                <div class="logo flex gap-2">
-                    <img src="./img/logo.svg" alt="Logo EduTech" class="w-8">
-                    <a class="text-blue-600 font-bold content-center text-[1rem]">EduTech Academy</a>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                Construa Seu Futuro com a <span class="text-blue-600">EduTech Academy</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.
+            </p>
+        </section>
+
+        <section class="mb-20">
+            <h2 class="text-2xl font-bold mb-8 border-l-4 border-blue-600 pl-4">Nossos Cursos</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="./img/fullstack.jpg" alt="Web Fullstack" class="h-40 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Desenvolvimento Web Fullstack</h3>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+                            <span>🕒 120 Horas</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                            <span>📍 EAD</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Ver detalhes</button>
+                    </div>
                 </div>
-                <div class="hidden md-flex justify-end ">
-                    <nav>
-                        <a href="#" class>Home</a>
-                        <a href="#">Cursos</a>
-                        <a href="#">Matrícula</a>
-                        <a href="#">Sobre</a>
-                        <img src="./img/moon.svg" alt="Icon Moon">
-                    </nav>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="./img/data-science.jpg" alt="Data Science" class="h-40 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Data Science & ML</h3>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+                            <span>🕒 100 Horas</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                            <span>📍 Presencial</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Ver detalhes</button>
+                    </div>
                 </div>
-                <div class="md-hidden">
-                    <a href="#" class="text-2xl content-center">&#9776</a>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="./img/marketing.jpg" alt="Marketing" class="h-40 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Marketing Digital & SEO</h3>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+                            <span>🕒 80 Horas</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                            <span>📍 EAD</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Ver detalhes</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="./img/ux-design.jpg" alt="UX Design" class="h-40 w-full object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">UI/UX Design</h3>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-1">
+                            <span>🕒 90 Horas</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+                            <span>📍 Presencial</span>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Ver detalhes</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-4 py-12">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Matrícula</h2>
+            
+            <div class="bg-white p-6 md:p-10 rounded-2xl shadow-xl border border-gray-100">
+                <h3 class="text-lg font-semibold mb-8 text-blue-900 border-b pb-2">Formulário de Matrícula</h3>
+                
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                    
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-1">Nome Completo *</label>
+                        <input type="text" placeholder="Digite seu nome completo" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 transition-all outline-none">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1 email">Email *</label>
+                        <input type="email" placeholder="Digite seu email" class="email w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1">Telefone *</label>
+                        <input type="tel" placeholder="(00) 00000-0000" class=" telefone w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1">CPF *</label>
+                        <input type="text" placeholder="000.000.000-00" class="cpf w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1">Curso Desejado *</label>
+                        <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            <option value="">Selecione um curso</option>
+                            <option>Desenvolvimento Web Fullstack</option>
+                            <option>Data Science & Machine Learning</option>
+                            <option>Marketing Digital & SEO</option>
+                            <option>UI/UX Design</option>
+                        </select>
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1">CEP *</label>
+                        <input type="text" placeholder="00000-000" class=" cep w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1 rua">Rua *</label>
+                        <input type="text" placeholder="Nome da rua" class=" w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1 bairro">Bairro *</label>
+                        <input type="text" placeholder="Bairro" class="  w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1 cidade">Cidade *</label>
+                        <input type="text" placeholder="Cidade" class=" w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-1 estado">Estado *</label>
+                        <input type="text" placeholder="Estado (UF)" class=" w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+        
+                    <div class="md:col-span-2 mt-6">
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all transform active:scale-[0.98]">
+                            Enviar Matrícula
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t mt-20 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h2 class="font-bold text-xl text-blue-600 mb-4">EduTech Academy</h2>
+                <p class="text-gray-500 text-sm">Transformando carreiras através da educação desde 2010.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Contato</h3>
+                <p class="text-sm text-gray-600">contato@edutechacademy.com.br</p>
+                <p class="text-sm text-gray-600">(11) 98888-8888</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-4">Siga-nos</h3>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <span class="cursor-pointer">FB</span>
+                    <span class="cursor-pointer">IG</span>
+                    <span class="cursor-pointer">LK</span>
                 </div>
             </div>
-            <hr class="mt-[0.5rem] text-gray-100">
-        </header>
+        </div>
+        <div class="text-center mt-12 text-xs text-gray-400">
+            © 2026 EduTech Academy. Todos os direitos reservados.
+        </div>
+    </footer>
 
-        <main class="">
-
-            <section>
-                <div class="flex flex-col  mt-8 mx-4">
-                    <h1 class="text-2xl font-bold text-center"> Construa Seu Futuro com a EduTech Academy</h1>
-                    <p class="text-[1rem] mt-4  text-center text-gray-400">Cursos de alta qualidade para impulsionar sua
-                        carreira e transformar sua vida profissional</p>
-                </div>
-            </section>
-
-            <section class="mt-8 mx-[0.80rem] flex flex-col gap-4">
-
-                <h2 class="font-medium text-lg">Nossos Cursos</h2>
-
-                <div class="cards flex flex-col mt-2 ">
-
-                    <img src="./img/fullstack.jpg" alt="desenvolvimento weg full stack"
-                        class=" h-[140px] object-cover rounded-tl-lg rounded-tr-lg">
-
-                    <div class="bg-gray-50 rounded-bl-lg rounded-br-lg border-red-800                    ">
-                        <p class="mx-6 mt-5 font-semibold"> Desenvolvimento Web Fullstack</p>
-                        <div class=" mt-[0.25rem] flex flex-col gap-[0.25rem] mx-6">
-                            <div class="flex gap-2">
-                                <img src="./img/clock.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">120 Horas</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <img src="./img/map-pin.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">EAD</p>
-                            </div>
-                            <div>
-                                <p class=" mb-5 rounded-lg text-white bg-blue-600 mt-4 text-center p-[0.25rem]">Ver
-                                    detalhes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cards flex flex-col mt-4 ">
-
-                    <img src="./img/data-science.jpg" alt="desenvolvimento weg full stack"
-                        class=" h-[140px] object-cover rounded-tl-lg rounded-tr-lg">
-
-                    <div class="bg-gray-50 rounded-bl-lg rounded-br-lg border-red-800                    ">
-                        <p class="mx-6 mt-5 font-semibold"> Desenvolvimento Web Fullstack</p>
-                        <div class=" mt-[0.25rem] flex flex-col gap-[0.25rem] mx-6">
-                            <div class="flex gap-2">
-                                <img src="./img/clock.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">100 Horas</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <img src="./img/map-pin.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">Presencial</p>
-                            </div>
-                            <div>
-                                <p class=" mb-5 rounded-lg text-white bg-blue-600 mt-4 text-center p-[0.25rem]">Ver
-                                    detalhes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cards flex flex-col mt-4 ">
-
-                    <img src="./img/marketing.jpg" alt="desenvolvimento weg full stack"
-                        class=" h-[140px] object-cover rounded-tl-lg rounded-tr-lg">
-
-                    <div class="bg-gray-50 rounded-bl-lg rounded-br-lg border-red-800                    ">
-                        <p class="mx-6 mt-5 font-semibold"> Desenvolvimento Web Fullstack</p>
-                        <div class=" mt-[0.25rem] flex flex-col gap-[0.25rem] mx-6">
-                            <div class="flex gap-2">
-                                <img src="./img/clock.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">80 Horas</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <img src="./img/map-pin.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">EAD</p>
-                            </div>
-                            <div>
-                                <p class=" mb-5 rounded-lg text-white bg-blue-600 mt-4 text-center p-[0.25rem]">Ver
-                                    detalhes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cards flex flex-col mt-4 ">
-
-                    <img src="./img/ux-design.jpg" alt="desenvolvimento weg full stack"
-                        class=" h-[140px] object-cover rounded-tl-lg rounded-tr-lg">
-
-                    <div class="bg-gray-50 rounded-bl-lg rounded-br-lg border-red-800                    ">
-                        <p class="mx-6 mt-5 font-semibold"> Desenvolvimento Web Fullstack</p>
-                        <div class=" mt-[0.25rem] flex flex-col gap-[0.25rem] mx-6">
-                            <div class="flex gap-2">
-                                <img src="./img/clock.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">90 Horas</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <img src="./img/map-pin.svg" alt="#" class=" w-3">
-                                <p class="text-[0.75rem] text-gray-400">Presencial</p>
-                            </div>
-                            <div>
-                                <p class=" mb-5 rounded-lg text-white bg-blue-600 mt-4 text-center p-[0.25rem]">Ver
-                                    detalhes</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
-
-
-
-
-
-
-    </body>
+    <script src="./src/main/script.js" type="module">    </script>
 </body>
-
 </html>
